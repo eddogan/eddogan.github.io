@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI Code Review Assistant – Portfolio</title>
+  <style>
+    /* Animated gradient background */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+      color: #333;
+      background: linear-gradient(-45deg, #a76de7, #ff7f66, #ffd86f, #ff66b3);
+      background-size: 400% 400%;
+      animation: gradientShift 15s ease infinite;
+    }
+
+    @keyframes gradientShift {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    header {
+      background: rgba(34, 34, 34, 0.85);
+      color: #fff;
+      padding: 1.5rem;
+      text-align: center;
+      border-radius: 0 0 8px 8px;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 1.8rem;
+    }
+    main {
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 2rem;
+      background: rgba(255, 255, 255, 0.9);
+      border-radius: 10px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    }
+    h2 {
+      margin-top: 2rem;
+      color: #444;
+    }
+    .section {
+      margin-bottom: 2rem;
+    }
+    .screenshot {
+      margin-top: 1rem;
+      max-width: 100%;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+    }
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background: rgba(34, 34, 34, 0.85);
+      color: #aaa;
+      font-size: 0.9rem;
+      border-radius: 8px 8px 0 0;
+    }
+    @media (max-width: 600px) {
+      main {
+        padding: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>AI-Powered Code Review Assistant</h1>
+  <p>Hackathon Project – Engineering Leadership Case Study</p>
+</header>
+
+<main>
+  <section class="section">
+    <h2>Overview</h2>
+    <p>An internal AI code reviewer that delivers actionable suggestions on merge requests, improving code quality and speeding up initial MR response times.</p>
+  </section>
+
+  <section class="section">
+    <h2>Problem</h2>
+    <p>Code review was a bottleneck in our development process. Junior engineers often hesitated to give feedback, while senior engineers risked getting stuck in established patterns. AI-assisted coding was becoming more common in our team, but code reviews lagged behind in quality control.</p>
+    <p>AI could catch issues invisible to the human eye — especially subtle syntax or structural errors that looked correct but produced incorrect results. This made automated, intelligent code review an opportunity for both quality and efficiency gains.</p>
+  </section>
+
+  <section class="section">
+    <h2>Solution</h2>
+    <p>I built an AI assistant that understands our codebase, style guides, standards, and architecture, and can provide practical, context-aware review comments.</p>
+    <p>We use Sourcegraph’s Cody AI and GitLab, so I designed a tool that integrates Cody CLI into our GitLab workflow. The prototype was built in Python, with the goal of automating high-quality MR feedback.</p>
+  </section>
+
+  <section class="section">
+    <h2>My Role & Leadership</h2>
+    <p>This was a one-week hackathon project I initiated and developed myself. I partnered with the infrastructure team to gain API access to GitLab and handled all coding independently.</p>
+    <p>Although full GitLab integration was blocked by company authorization rules, I secured leadership buy-in to revisit the integration at the next hackathon. In its current form, the tool runs locally, enabling engineers to review their own code or others’ before pushing changes.</p>
+  </section>
+
+  <section class="section">
+    <h2>Impact</h2>
+    <p>The tool was quickly adopted by junior engineers, who valued the structured, confidence-boosting feedback. It sparked discussions on further enhancements and showed clear potential for improving consistency and code quality across the team.</p>
+  </section>
+
+  <section class="section">
+    <h2>Features</h2>
+    <ul>
+      <li>Posts AI-generated MR reviews directly from the CLI</li>
+      <li>Customizable prompts based on reviewer preferences</li>
+      <li>Outputs structured, enumerated feedback points</li>
+      <li>Option to skip or post each suggestion individually so they can be tracked as separate issues</li>
+    </ul>
+    <img src="screenshot-placeholder.png" alt="Project screenshot" class="screenshot" />
+  </section>
+
+  <section class="section">
+    <h2>Lessons Learned</h2>
+    <p>Adoption is as much a cultural challenge as a technical one — some senior engineers were resistant to change, but AI can reduce costly human mistakes and elevate the overall quality of the codebase.</p>
+  </section>
+</main>
+
+<footer>
+  &copy; 2025 Ed Dogan – Built with curiosity and AI
+</footer>
+
+</body>
+</html>
