@@ -88,7 +88,18 @@
   </header>
 
   <section>
-    <p>Over the long weekend, I decided to put two popular AI coding assistants to the test: <strong>Google AI Studio Code Assistant</strong> and <strong>Claude</strong>. I gave them the same prompt — build a simple memory game app — and watched how they approached it.</p>
+    <p>Over the long weekend, I decided to give Google's AI toys another chance. They've been trying hard and had some impressive demos especially with <strong>"Nano banana"</strong>. 
+      The test was of course against my favorite coder <strong>Claude</strong>. I gave them the same prompt — build a simple memory game app — and watched how they approached it.</p>
+  </section>
+
+  <section>
+    <h2>The setup</h2>
+    <p>The rules were simple:</p>
+    <ul>
+      <li>Same prompt for both models.</li>
+      <li>Goal: Build a mobile memory game deployable to Google PlayStore.</li>
+      <li>Explicit instruction at the end: “If you have any questions, ask me first.”</li>
+    </ul>
   </section>
 
   <section>
@@ -97,7 +108,7 @@
     <ul>
       <li><strong>Time Taken:</strong> ~2 minutes 11 seconds (including ~35 seconds of debugging)</li>
       <li><strong>Approach:</strong> Prioritized speed above everything else</li>
-      <li><strong>Result:</strong> The game ran briefly but <em>crashed after finding the first pair</em></li>
+      <li><strong>Result:</strong> The game ran initially but <em>crashed after finding the first pair</em></li>
     </ul>
   </section>
 
@@ -107,20 +118,22 @@
     <ul>
       <li><strong>Time Taken:</strong> ~7 minutes 30 seconds to build, plus ~4 minutes 40 seconds to run & test (including waiting for my approvals)</li>
       <li><strong>Approach:</strong> Focused on intent alignment and usability</li>
-      <li><strong>Result:</strong> The game worked almost perfectly, with only a minor animation bug</li>
+      <li><strong>Result:</strong> The game worked almost perfectly, only minor bug was with animations blocking clicks.</li>
     </ul>
   </section>
 
   <section>
     <h2>The Tradeoff</h2>
-    <blockquote>In real-world engineering, a broken answer delivered instantly is worse than a slower one that actually works.</blockquote>
-    <p>Google clearly optimized for speed, but the end product was unstable. Claude optimized for accuracy and intent, and the outcome was usable. This raises a bigger question: <strong>what are AI leaders asking their teams to optimize for?</strong></p>
-    <p>If “faster demos” is the only directive, we’ll keep getting impressive showcases that fail in practice. Reliability and alignment should matter just as much as speed.</p>
+    <blockquote>In real-world engineering, picking the right tradeoff is the most important</blockquote>
+    <p>I did not stop at Code Assistant and played with many of the impressive assistants they have. Speed was unmatched. Nano banana created a very complicated background asset (it wasnt usable and old games style but followed the prompt) for my game in 11 secs. It was clear, Google threw everything at speed.</p>
+    <p>The leadership decision to go for speed was so obviously glaring...</p>
+    <p>OpenAI has been doing the same thing, throwing a lot of their efforts at improving speed. But I don't think it's the way to lead the AI revolution.</p> 
+    <p>Faster demos with an unstable product when you dig deeper is how you kill your AI products. AI leaders should focus more on reliability and alignment when we're going towards the AI future.</p>
   </section>
 
   <section>
     <h2>Takeaway</h2>
-    <p>This experiment reminded me that the way leadership frames success for AI teams has massive downstream effects. Optimizing only for speed might win the demo, but optimizing for accuracy builds tools that engineers can actually trust.</p>
+    <p>This experiment reminded me that the way leadership frames <strong>success for AI teams</strong> has massive downstream effects. Optimizing only for speed might win the demo, but optimizing for accuracy builds tools that we can actually trust.</p>
     <p><strong>Impressive demos, unreliable products.</strong> That’s not the future I want to build.</p>
   </section>
 
