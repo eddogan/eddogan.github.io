@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Impressive Demos, Unreliable Products – Ed Dogan</title>
+  <style>
+    @keyframes gradient {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, sans-serif;
+      margin: 0;
+      background: linear-gradient(270deg, #a1c4fd, #c2e9fb, #d4fc79, #96e6a1);
+      background-size: 600% 600%;
+      animation: gradient 20s ease infinite;
+      color: #111827;
+      line-height: 1.7;
+    }
+
+    header, footer {
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 2.5em;
+      margin-bottom: 10px;
+    }
+
+    section {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 20px;
+      background: rgba(255, 255, 255, 0.85);
+      border-radius: 12px;
+    }
+
+    h2 {
+      border-bottom: 2px solid #e5e7eb;
+      padding-bottom: 8px;
+      margin-bottom: 20px;
+    }
+
+    p {
+      margin-bottom: 1em;
+    }
+
+    ul {
+      list-style: disc inside;
+      margin-bottom: 1em;
+    }
+
+    li {
+      margin-bottom: 0.5em;
+    }
+
+    a {
+      color: #3b82f6;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      font-size: 0.9em;
+      color: #374151;
+    }
+
+    blockquote {
+      border-left: 4px solid #3b82f6;
+      padding-left: 16px;
+      margin-left: 0;
+      font-style: italic;
+      color: #1f2937;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Impressive Demos, Unreliable Products</h1>
+    <p>When Google’s AI Leadership Asks for the Wrong Improvements – By Ed Dogan</p>
+  </header>
+
+  <section>
+    <p>Over the long weekend, I decided to put two popular AI coding assistants to the test: <strong>Google AI Studio Code Assistant</strong> and <strong>Claude</strong>. I gave them the same prompt — build a simple memory game app — and watched how they approached it.</p>
+  </section>
+
+  <section>
+    <h2>Google AI Studio</h2>
+    <p>Google’s assistant jumped straight into coding without asking a single clarifying question. It built the app in <strong>TypeScript</strong>, despite my instructions that it would need to be deployed to the Google Play Store.</p>
+    <ul>
+      <li><strong>Time Taken:</strong> ~2 minutes 11 seconds (including ~35 seconds of debugging)</li>
+      <li><strong>Approach:</strong> Prioritized speed above everything else</li>
+      <li><strong>Result:</strong> The game ran briefly but <em>crashed after finding the first pair</em></li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Claude</h2>
+    <p>Claude, on the other hand, paused to ask <strong>four clarifying questions</strong> — even asking me what the game should be called. It then built the app with <strong>create-react-expo</strong>, a framework better suited for mobile deployment.</p>
+    <ul>
+      <li><strong>Time Taken:</strong> ~7 minutes 30 seconds to build, plus ~4 minutes 40 seconds to run & test (including waiting for my approvals)</li>
+      <li><strong>Approach:</strong> Focused on intent alignment and usability</li>
+      <li><strong>Result:</strong> The game worked almost perfectly, with only a minor animation bug</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>The Tradeoff</h2>
+    <blockquote>In real-world engineering, a broken answer delivered instantly is worse than a slower one that actually works.</blockquote>
+    <p>Google clearly optimized for speed, but the end product was unstable. Claude optimized for accuracy and intent, and the outcome was usable. This raises a bigger question: <strong>what are AI leaders asking their teams to optimize for?</strong></p>
+    <p>If “faster demos” is the only directive, we’ll keep getting impressive showcases that fail in practice. Reliability and alignment should matter just as much as speed.</p>
+  </section>
+
+  <section>
+    <h2>Takeaway</h2>
+    <p>This experiment reminded me that the way leadership frames success for AI teams has massive downstream effects. Optimizing only for speed might win the demo, but optimizing for accuracy builds tools that engineers can actually trust.</p>
+    <p><strong>Impressive demos, unreliable products.</strong> That’s not the future I want to build.</p>
+  </section>
+
+  <footer>
+    © 2025 Ed Dogan – Built with curiosity and AI
+  </footer>
+</body>
+</html>
